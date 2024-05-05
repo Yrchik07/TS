@@ -5,7 +5,10 @@ type AllType = {
   weight: number;
 };
 
- function compare(top: AllType, bottom: AllType): AllType {
+function compare(
+  top: Pick<AllType, "name" | "color">,
+  bottom: Pick<AllType, "position" | "weight">
+): AllType {
   return {
     name: top.name,
     color: top.color,
@@ -13,19 +16,18 @@ type AllType = {
     weight: bottom.weight,
   };
 }
-
 const topObj: AllType = {
-    name: "Top",
-    color: "Red",
-    position: 1,
-    weight: 10,
-  };
-  
-  const bottomObj: AllType = {
-    name: "Bottom",
-    color: "Blue",
-    position: 2,
-    weight: 20,
-  };
-  
-  export const result = compare(topObj, bottomObj);
+  name: "Top",
+  color: "Red",
+  position: 1,
+  weight: 10,
+};
+
+const bottomObj: AllType = {
+  name: "Bottom",
+  color: "Blue",
+  position: 2,
+  weight: 20,
+};
+
+export const result = compare(topObj, bottomObj);

@@ -17,38 +17,38 @@ import { params } from './generics/6';
 import './style.css';
 
 // basic
-console.log('age: ', age);
-console.log('toggle: ', toggle);
-console.log('empty: ', empty);
-console.log('callback: ', callback);
+console.log('1.1 age: ', age);
+console.log('1.2 toggle: ', toggle);
+console.log('1.3 empty: ', empty);
+console.log('1.4 callback: ', callback);
 
-console.log('person: ', person);
+console.log('2 person: ', person);
 
-console.log('mixedValue: ', mixedValue);
-console.log('value: ', value);
+console.log('3.1 mixedValue: ', mixedValue);
+console.log('3.2 value: ', value);
 
 console.log(showMessage('Hello World!'));
-console.log('calc: ', calc(1, 2));
-console.log('customError: ', customError);
+console.log('4.2 calc: ', calc(1, 2));
+console.log('4.3 customError: ', customError);
 
 const day: DayOfWeek = DayOfWeek.Saturday;
 console.log(isWeekend(day));
 
-console.log('mango: ', mango);
-console.log('poly: ', poly);
+console.log('6.1 mango: ', mango);
+console.log('6.2 poly: ', poly);
 
-console.log('page1: ', page1);
-console.log('page2: ', page2);
+console.log('7.1 page1: ', page1);
+console.log('7.2 page2: ', page2);
 
 // generics
-console.log('fetchData(): ', fetchData("https://jsonplaceholder.typicode.com/todos/1"))
+console.log('1 fetchData(): ', fetchData("https://jsonplaceholder.typicode.com/todos/1"))
 
-console.log(result);
+console.log('2 result: ', result);
 
-console.log(mergedObj);
+console.log('4 mergedObj: ', mergedObj);
 
-console.log(newUser);
+console.log('5 newUser: ', newUser);
 
-console.log('RoleDescription: ', RoleDescription);
+console.log('6 RoleDescription: ', RoleDescription);
 
-console.log(params);
+console.log('7 params: ', params);
