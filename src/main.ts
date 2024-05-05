@@ -7,7 +7,7 @@ import { DayOfWeek, isWeekend } from './basic/5';
 import { mango, poly } from './basic/6';
 import { page1, page2 } from './basic/7';
 import { fetchData } from './generics/1';
-import { result} from './generics/2';
+import { result, result2} from './generics/2';
 import { mergedObj } from './generics/3';
 import { newUser } from './generics/4';
 import { RoleDescription } from './generics/5';
@@ -43,7 +43,8 @@ console.log('7.2 page2: ', page2);
 // generics
 console.log('1 fetchData(): ', fetchData("https://jsonplaceholder.typicode.com/todos/1"))
 
-console.log('2 result: ', result);
+console.log('2.1 result: ', result);
+console.log('2.2 result2: ', result2);
 
 console.log('4 mergedObj: ', mergedObj);
 

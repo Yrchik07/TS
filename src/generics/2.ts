@@ -1,14 +1,14 @@
-type AllType = {
+interface AllType {
   name: string;
   position: number;
   color: string;
   weight: number;
-};
+}
 
 function compare(
-  top: Pick<AllType, "name" | "color">,
-  bottom: Pick<AllType, "position" | "weight">
-): AllType {
+  top: AllType,
+  bottom: AllType
+): Pick<AllType, "name" | "color"> & Pick<AllType, "position" | "weight"> {
   return {
     name: top.name,
     color: top.color,
@@ -16,18 +16,19 @@ function compare(
     weight: bottom.weight,
   };
 }
-const topObj: AllType = {
+const top: AllType = {
   name: "Top",
   color: "Red",
   position: 1,
   weight: 10,
 };
 
-const bottomObj: AllType = {
+const bottom: AllType = {
   name: "Bottom",
   color: "Blue",
   position: 2,
   weight: 20,
 };
 
-export const result = compare(topObj, bottomObj);
+export const result = compare(top, bottom);
+export const result2 = compare(bottom, top);
